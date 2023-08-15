@@ -1,0 +1,209 @@
+body {
+    background-color:white ;
+    font-size:16px;
+    
+    
+  }
+  .page-heading {
+    position: relative;
+    color: black;
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+    font-size: 1.75em;
+    text-align: center;
+    margin-top: 8%;
+    font-weight: bold;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .sections-container {
+    display: flex;        /* Use flexbox to arrange sections side by side */
+    position:relative;
+    left:0;
+  }
+  .font-section {
+    position:relative;
+    font-size : 1em;
+    text-align:left;
+    margin-top:35px;
+    overflow:hidden ;
+  }
+  
+  .section-price {
+    position: absolute;
+    bottom: 5px;
+    background-color: #3a16ba;
+    color: white;
+    padding: 3px;
+  
+  }
+  .section-box {
+    position: relative;
+    border: 3px solid black;
+    height: 150px;
+    padding: 10px;
+  }
+  
+  .sb1 {
+   
+    background-color:rgb(233, 228, 228);
+    margin-left:32px;
+    margin-right:16px;
+   /*beef meet edit*/
+  }
+  
+  .sb2 {
+    background-color: rgb(216, 214, 214);
+    margin-right: 8px;
+    margin-left:16px;
+   
+  }
+  
+  .sb3 {
+    
+    background-color: rgb(216, 214, 214);
+    margin-right: 32px;
+    margin-left:8px;
+    
+  }
+  
+  .subtitle {
+    position: absolute;
+    top:0px;
+    right: 0px;
+    width: 30%;
+    height: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    border: 1px solid black;
+    font-size: 1.25em;
+  }
+  /*edit menu8*/
+  .subt1 {
+  background-color: rgb(27, 179, 159);
+  color:white;
+  }
+  
+  .subt2 {
+    
+    background-color: rgb(111, 156, 22);
+    color:white;
+    
+  }
+  
+  .subt3 {
+    
+    background-color: rgb(176, 28, 161);
+    color:white;
+    
+  }
+  .subt4{
+    background-color: #ddd;
+    color: #930c0c;
+  }
+  
+  /* Rest of your CSS rules */
+
+ .sb1:hover,
+ .sb2:hover,
+ .sb3:hover {
+  cursor: pointer; /* Change the cursor to a pointer hand on hover */
+  content: icon;
+ }
+
+  
+  /* Add new styles for the displayed details */
+.details-container {
+  font-family:Georgia, 'Times New Roman', Times, serif
+  padding: 20px;
+  background-color: rgb(20, 214, 181);
+  margin: 0 auto;
+  width: 59%;
+  box-shadow: 0px 0px 10px rgba(250, 4, 4, 0.2);
+}
+
+.item-container {
+  margin-left: 20px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+.item-container h2 {
+  margin-left: ;
+  color: #930c0c;
+}
+
+  /* Media Queries for Responsive Layouts */
+  
+  @media screen and (min-width: 1200px) {
+    .sections-container {
+        
+    }
+  
+    .section-box {
+        width: 30%;
+        margin-left: 7%;
+   
+    }
+  
+    .subtitle {
+       
+    }
+  }
+
+
+  @media screen and (min-width: 850px) and (max-width: 1199px) {
+    .sections-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: left ;
+    }
+  
+    .sb1 {
+        flex: 1;
+        max-width: calc(50% - 20 px);
+        margin: 10px;
+    }
+    .sb2 {
+        flex: 1;
+        max-width:calc(50% - 20 px);
+        margin: 10px;
+    }
+    .sb3 {
+        width : calc(100% - 20px);
+        margin-top:10px;
+        margin-left:10px;
+        margin-right:10px;
+    }
+    
+    .subt1  {
+        width:30%;
+    }
+  
+    .subt2{
+        width: 30%;
+    }
+  
+    .subt3{
+        width: 13%;
+    }
+  }
+  
+  
+  @media screen and (max-width: 849px) {
+    .sections-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .section-box {
+        width: 80%;
+        margin: 10px 0;
+    }
+  
+    .subtitle {
+        
+        
+    } }
